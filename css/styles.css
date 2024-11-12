@@ -19,7 +19,7 @@ ul, ol{
     padding: 0;
 }
 img{
- display: block;
+display: block;
  max-width: 100%;
  height: auto;
 }
@@ -36,6 +36,9 @@ margin: 0 auto;
 button{
     cursor: pointer;
     background: #4d5ae5;
+}
+.header{
+    border-bottom: 1px solid #e7e9fc;
 }
 .logo-conteiner{
     display: flex;
@@ -111,7 +114,7 @@ h1{
 
 .hero{
      background-color: #2E2F42;
-     margin-bottom: 120px;
+padding: 188px 0;
 }
    
 .hero-title{
@@ -135,24 +138,26 @@ padding: 188px 15px;
     border-radius: 4px;
         padding: 16px 32px;
         min-width: 169px;
-            min-height: 56px;
+        height: 56px;
     font-family: inherit;
-font-weight: 500;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    height: 56px;
+    border: none;
 }
 .hero-button:hover,
 .hero-button:focus{
-    background-color: #404BBF
+    background-color: #404BBF;
 }
 .feature{
-    margin-bottom: 120px;
+padding: 120px 0;
 }
 .feature-ul{
     display: flex;
-    gap: 8px 24px;
+    gap: 24px;
 }
 .feature-li{
         width: 264px;
@@ -177,7 +182,7 @@ font-weight: 500;
 }
 .team{
     background: #f4f4fd;
-    margin-bottom: 120px;
+padding: 120px 0
 }
 .team-title{
     font-weight: 700;
@@ -208,9 +213,9 @@ font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        text-align: center;
+text-align: center;
         color: #2e2f42;
-        margin:32px 0 8px;
+margin-bottom: 8px;
 }
 .team-type{
     font-weight: 400;
@@ -219,11 +224,14 @@ font-weight: 500;
         letter-spacing: 0.02em;
         text-align: center;
         color: #434455;
-        margin-bottom: 32px;
+}
+.team-name{
+    padding: 32px 0;
 }
 .portfolio{
-    padding-bottom: 120px;
+padding: 120px 0 120px 0;
 }
+
 .portfolio-title{
     margin-bottom: 72px;
     font-weight: 700;
@@ -243,12 +251,15 @@ font-weight: 500;
         width: calc((100% - 2 * 24px) /3);
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid #e7e9fc;
-        border-left: 1px solid #e7e9fc;
-        border-right: 1px solid #e7e9fc;
+        row-gap: 48px;
+}
+.portfolio-name{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .portfolio-caption{
-margin: 32px 0 8px 16px;
+    margin-bottom: 8px
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -256,7 +267,6 @@ margin: 32px 0 8px 16px;
         color: #2e2f42;
 }
 .portfolio-type{
-    margin: 0 0 32px 16px;
     font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
