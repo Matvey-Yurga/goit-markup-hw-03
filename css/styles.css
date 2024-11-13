@@ -37,9 +37,22 @@ button{
     cursor: pointer;
     background: #4d5ae5;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
 .header{
     border-bottom: 1px solid #e7e9fc;
 }
+
 .logo-conteiner{
     display: flex;
         align-items: center;
@@ -299,12 +312,3 @@ padding: 100px 0
     color: #f4f4fd;
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
