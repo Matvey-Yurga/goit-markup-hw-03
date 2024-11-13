@@ -147,10 +147,6 @@ padding: 188px 15px;
 .feature{
 padding: 120px 0;
 }
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
-}
 .feature-ul{
     display: flex;
     gap: 24px;
@@ -242,13 +238,12 @@ padding: 120px 0 120px 0;
 .portfolio-ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 48px 24px;
 }
 .portfolio-li{
     width: calc((100% - 48px) / 3);
     display: flex;
     flex-direction: column;
-    row-gap: 48px;
 }
 .portfolio-name{
     padding: 32px 16px;
@@ -304,4 +299,12 @@ padding: 100px 0
     color: #f4f4fd;
 }
 
-
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
